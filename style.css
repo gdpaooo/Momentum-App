@@ -99,9 +99,21 @@ body {
 #buttonEditName, #buttonDeleteName {
     display: block;
     border: none;
-    background-color: rgba(255, 255, 255, 30);
-    color: black;
-    height: 20px;
+    color:  rgba(255, 255, 255, 0.5);
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    margin: 0 5px;
+}
+
+#buttonEditName:hover, #buttonDeleteName:hover {
+    color: white;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 0 5px;
 }
 
 
@@ -181,11 +193,22 @@ body {
 #buttonEditMainGoal, #buttonClearMainGoal {
     display: block;
     border: none;
-    background-color: rgba(255, 255, 255, 30);
-    color: black;
-    width: 100%;
+    color:  rgba(255, 255, 255, 0.5);
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    margin: 0 5px;
 }
 
+#buttonEditMainGoal:hover, #buttonClearMainGoal:hover {
+    color: white;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 0 5px;
+}
 
 /* =============================FOOTER============================= */
 
@@ -257,8 +280,23 @@ body {
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    background-color: lightseagreen;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.8)
 }
+
+#addQuote, #addAuthor {
+    display: block;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    height: 25px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+
 /* =============================TASK============================= */
 
 #taskMainCheckBoxContainer {
@@ -269,7 +307,6 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: rgb(210, 255, 127);
 }
 
 #taskContainer {
@@ -277,7 +314,7 @@ body {
     z-index: 1000;
     grid-template-rows: 30px auto 30px;
     position: fixed;
-    bottom: 80px;
+    bottom: 90px;
     right: 20px;
     width: max-content;
     align-items: end;

@@ -8,11 +8,7 @@
     </head>
     <body>
         <div id="mainContainer">
-            <div id="topContainer">
-                <form method="get" action="https://www.google.com/search" target="_blank">
-                    <input type="text" name="q" size="31" value="">
-                </form>
-            </div>
+            <div id="topContainer"></div>
             <div id="container">
                 <div id="clock"></div>
                 <div id="greetingsContainer">
@@ -21,8 +17,8 @@
                         <span id="yourNameContainer" class="hide"><p id="yourName"></p></span>
                         <span id="editNameContainer"><input type="text" id="editName"></span>
                     </div>
-                    <button id="buttonEditName" class="hide">Edit</button>
-                    <button id="buttonDeleteName" class="hide">Delete</button>
+                    <button id="buttonEditName" class="hide">✎</button>
+                    <button id="buttonDeleteName" class="hide">✕</button>
                 </div>
                 <div id="mainGoalContainer">
                     <div id="mainGoalQA">
@@ -39,8 +35,8 @@
                         </div>
                     </div>
                     <div id="mainGoalButtonContainer" class="hide">
-                        <button id="buttonEditMainGoal">Edit</button>
-                        <button id="buttonClearMainGoal">Clear</button>
+                        <button id="buttonEditMainGoal">✎</button>
+                        <button id="buttonClearMainGoal">✕</button>
                     </div>
                 </div>
             </div>
@@ -67,7 +63,7 @@
             </div>
         </div>
         <div id="addQuoteMainContainer">
-            <div id="addQuoteContainer" class="hide">
+            <div id="addQuoteContainer" >
                 <p>Quote</p>
                 <input type="text" id="addQuoteInput" placeholder="Add quote (required)">
                 <p>Author</p>

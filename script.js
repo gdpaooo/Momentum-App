@@ -274,6 +274,7 @@ let quoteArray = [
     }
 ]
 
+
 let randomNumberQuotes = Math.floor(Math.random() * quoteArray.length);
 
 let quoteFunction = function() {
@@ -283,13 +284,14 @@ let quoteFunction = function() {
 
 quoteFunction();
 // setInterval(quoteFunction(), 36000000);
+addQuoteContainer.classList.toggle("hide");
 
-openQuoteAddButton.eventListener("click", function() {
+openQuoteAddButton.addEventListener("click", function() {
     addQuoteContainer.classList.toggle("hide");
 })
 
 
-addQuoteButton.eventListener("click", function() {
+addQuoteButton.addEventListener("click", function() {
     if (addQuoteInput.value !== "" && addAuthorInput.value !== "") {
         quoteArray.unshift({
             quote: addQuoteInput.value,
