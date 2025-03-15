@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Momentum Application</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="topContainer">
+                <form method="get" action="https://www.google.com/search" target="_blank">
+                    <input type="text" name="q" size="31" value="">
+                </form>
+            </div>
+            <div id="container">
+                <div id="clock"></div>
+                <div id="greetingsContainer">
+                    <div>
+                        <p id="greetings"></p>
+                        <span id="yourNameContainer" class="hide"><p id="yourName"></p></span>
+                        <span id="editNameContainer"><input type="text" id="editName"></span>
+                    </div>
+                    <button id="buttonEditName" class="hide">Edit</button>
+                    <button id="buttonDeleteName" class="hide">Delete</button>
+                </div>
+                <div id="mainGoalContainer">
+                    <div id="mainGoalQA">
+                        <div id="mainGoalQuestion">
+                            <p>What is your main goal today?</p>
+                            <input type="text" id="enterMainGoal">
+                        </div>
+                        <div id="mainGoalAnswer" class="hide">
+                            <p>TODAY</p>
+                            <div>
+                                <input type="checkBox" id="mainGoalCheckBox">
+                                <label id="checkBoxLabel">EXAMPLE</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mainGoalButtonContainer" class="hide">
+                        <button id="buttonEditMainGoal">Edit</button>
+                        <button id="buttonClearMainGoal">Clear</button>
+                    </div>
+                </div>
+            </div>
+            <div id="bottomContainer">
+                <div id = imageDetails>
+                    <buttion id="imageButton" class="hide">Image</button>
+                </div>
+                <div id="quoteContainer">
+                    <div id="quote"></div>
+                    <div id="quoteAuthor"></div>
+                    <button id="openQuoteAddButton">+</button>
+                </div>
+                <div id = taskMainCheckBoxContainer>
+                    <p>Task</p>
+                    <input type="checkbox" id="taskMainCheckBox">
+                </div>
+            </div>
+        </div>
+        <div id="taskContainer" class="hide">
+            <div id="taskHeader">Task List</div>
+            <div id="taskList"></div>
+            <div>
+                <input type="text" id="taskInput" placeholder="New Task">
+            </div>
+        </div>
+        <div id="addQuoteMainContainer">
+            <div id="addQuoteContainer" class="hide">
+                <p>Quote</p>
+                <input type="text" id="addQuoteInput" placeholder="Add quote (required)">
+                <p>Author</p>
+                <input type="text" id="addAuthorInput" placeholder="Add author name (optional)">
+                <button id="addQuoteButton">Add</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

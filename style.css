@@ -1,0 +1,327 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#mainContainer {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    background: url(images/Coleford\,\ England.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.hide {
+    display: none !important;
+    /* transition: 3s; */
+}
+
+.show{
+    display: block;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+
+/* =============================MAIN============================= */
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+}
+
+
+/* =============================CLOCK============================= */
+
+#clock {
+    font-size: 150px;
+    text-align: center;
+}
+
+
+/* =============================GREETINGS============================= */
+
+#greetingsContainer {
+    display: flex;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#yourNameContainer, #editNameContainer {
+    display: inline-block;
+}
+
+#greetings, #yourName {
+    display: inline-block;
+    font-size: 50px;
+    font-style: normal;
+    margin: 0 10px;
+}
+
+#editName {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+    width: 200px;
+    max-width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#editName:focus {
+    outline: none;
+}
+
+#buttonEditName, #buttonDeleteName {
+    display: block;
+    border: none;
+    background-color: rgba(255, 255, 255, 30);
+    color: black;
+    height: 20px;
+}
+
+
+/* #buttonEditName:hover {
+
+} */
+
+
+/* =============================GOAL (FOCUS)============================= */
+
+#mainGoalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin: 70px 0 0 0;
+}
+
+#mainGoalQA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#mainGoalQuestion, #mainGoalAnswer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 580px;
+    font-size: 40px;
+}
+
+#mainGoalQuestion > p {
+    margin: 0;
+    padding: 0;
+}
+#enterMainGoal {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom: 3px solid rgba(255, 255, 255, 1);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#enterMainGoal:focus {
+    outline: none;
+}
+
+#mainGoalAnswer > p {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#mainGoalButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+#buttonEditMainGoal, #buttonClearMainGoal {
+    display: block;
+    border: none;
+    background-color: rgba(255, 255, 255, 30);
+    color: black;
+    width: 100%;
+}
+
+
+/* =============================FOOTER============================= */
+
+
+#bottomContainer {
+    display: grid;
+    grid-template-columns: 80px auto 80px;
+    align-items: center;
+    text-align: center;
+    margin: 5px 20px;
+    padding: 0;
+}
+
+
+/* =============================QUOTE============================= */
+
+#quoteContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: max-content;
+    max-width: calc(100vw - 40px);
+    margin: 0 auto;
+    padding: 0;
+}
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    margin: 10px auto;
+}
+
+#openQuoteAddButton {
+    z-index: 2000;
+    display: block;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    height: 25x;
+    width: 25px;
+    border-radius: 12.5px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#addQuoteMainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+
+#addQuoteContainer {
+    z-index: 1000;
+    position: fixed;
+    bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lightseagreen;
+}
+/* =============================TASK============================= */
+
+#taskMainCheckBoxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(210, 255, 127);
+}
+
+#taskContainer {
+    display: block;
+    z-index: 1000;
+    grid-template-rows: 30px auto 30px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: max-content;
+    align-items: end;
+    background-color: rgba(253, 254, 254, 1);
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#taskHeader {
+    font-size: 23px;
+    margin: 0;
+    padding: 15px 15px 20px 15px;
+    text-align: center;
+    width: 300px;
+}
+
+#taskList {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    overflow-y: scroll;
+    overflow-wrap: normal;
+    max-height: 75vh;
+}
+
+#taskInput {
+    width: 300px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 20px 15px 15px 15px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#taskInput:focus {
+    outline: none;
+}
+
+/* #editLabel:focus {
+    outline: none;
+} */
